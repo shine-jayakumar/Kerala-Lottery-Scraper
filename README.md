@@ -14,6 +14,8 @@ The script runs in Headless Chrome mode enabling it to be deployed on Heroku and
 - [Packages](#Packages "Packages")
 - [How To Deploy](#How-To-Deploy "How to Deploy")
 - [Run The App](#Run-The-App "Run The App")
+- [Getting Started With Heroku](#Getting-Started-With-Heroku "Getting Started With Heroku")
+- [Script Link](#Script-Link "Script Link")
 
 
 ## Packages
@@ -21,6 +23,7 @@ The script runs in Headless Chrome mode enabling it to be deployed on Heroku and
 - selenium
 
   See the [Requirements.txt](https://github.com/shine-jayakumar/Kerala-Lottery-Scraper/blob/main/requirements.txt)
+
 
 ## How To Deploy
 I hope you built your project in a virtual environment. It's going to be lot easier that way.
@@ -62,13 +65,17 @@ Steps:
      ```
 Your app is now successfully deployed.
 
+
 ## Run The App
 
    ```
       heroku run python scraper.py
    ```
-     
+   
+## Getting Started With Heroku
+
 Take a look at this quick guide to [Getting Started on Heroku with Python](https://devcenter.heroku.com/articles/getting-started-with-python)
+
 
 ## Script Link
 **Link:** [scraper.py](https://github.com/shine-jayakumar/Kerala-Lottery-Scraper/blob/main/scraper.py)
