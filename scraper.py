@@ -6,7 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC, wait
 from selenium.webdriver.common.by import By
 # from webdriver_manager.chrome import ChromeDriverManager
 
-# import time
 from datetime import datetime
 import pandas as pd
 import tempfile
@@ -191,9 +190,4 @@ csvfile = tmpf.read()
 send_email(csvfile)
 
 print(csvfile.decode('utf-8'))
-
-
-
-
-
 
