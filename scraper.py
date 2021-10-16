@@ -1,3 +1,12 @@
+'''
+Kerela Lottery Scraper
+
+Extracts links to pdf containing lottery results
+
+Author: Shine Jayakumar
+Email: shinejayakumar@yahoo.com
+'''
+
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException, NoSuchElementException 
 from selenium.webdriver.support.ui import WebDriverWait
@@ -14,7 +23,6 @@ import smtplib
 from email.message import EmailMessage
 import os
 import sys
-
 
 
 # Use this if you want the driver to be loaded automatically
@@ -121,7 +129,6 @@ def send_email(fdata):
 
     except Exception as e:
         pass
-    
 
 
 
@@ -151,7 +158,6 @@ lottery_select = driver.find_element(By.ID, 'lotterydet')
 no_of_lottries = len(lottery_select.find_elements(By.TAG_NAME, 'option'))
 
 
-
 for index in range(0, no_of_lottries):
     # select element
     lottery_select_elem = driver.find_element(By.ID, 'lotterydet')
@@ -172,7 +178,6 @@ for index in range(0, no_of_lottries):
         lottery_df = lottery_df.append(pd.DataFrame.from_dict(get_lottery_links(old_lottries_tbody)), ignore_index=True)
     
     lottery_df = lottery_df.append(pd.DataFrame.from_dict(get_lottery_links(new_lottries_tbody)), ignore_index=True)
-
 
 
 # print('Writing to Excel')
