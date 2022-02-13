@@ -4,7 +4,7 @@ Kerela Lottery Scraper
 Extracts links to pdf containing lottery results
 
 Author: Shine Jayakumar
-Email: shinejayakumar@yahoo.com
+Github: https://github.com/shine-jayakumar
 '''
 
 from selenium import webdriver
